@@ -197,9 +197,9 @@ Student.prototype.scopeArrow = () => console.log(this);
 console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
-// 1. What is "this" when joe.scope() is invoked?
+// 1. What is "this" when joe.scope() is invoked? This is all the arguments passed to the constructor in the object 'joe'.
 //
-// 2. What is "this" when joe.scopeArrow() is invoked?
+// 2. What is "this" when joe.scopeArrow() is invoked? It appears to be some sort of overall page data.
 //
-// 3. Explain why "this" is different when an arrow function is used.
+// 3. Explain why "this" is different when an arrow function is used. According to MDN arrow functions cannot be used for constructors and do not have a prototype funtion. Perhaps this is because it changes the scope, or it is an anonymous function. 
 //
